@@ -57,9 +57,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Hollow Cube',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Hollow Cube Logo',
           src: 'img/hollowcube.png',
         },
         items: [
@@ -71,7 +71,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://https://github.com/hollow-cube',
             label: 'GitHub',
             position: 'right',
           },
@@ -93,29 +93,17 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://hollowcube.net/discord',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Development',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
-                href: 'https://github.com/hollow-cube/docs',
+                href: 'https://github.com/hollow-cube',
               },
             ],
           },
