@@ -15,4 +15,4 @@ choosing to keep it private to store their creations, practice specific parkour 
 project, etc. 
 
 There is no true end goal or objective. People can climb leaderboards or aim for the best stats, but the main 
-gimmick is just to have fun. And since most content is community-driven, there is an unlimited amount!
+gimmick is just to have fun, and since most content is community-driven, there is an unlimited amount of it!

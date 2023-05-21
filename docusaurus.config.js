@@ -84,8 +84,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Synopsis',
+                to: '/docs/what-is-map-maker',
               },
             ],
           },
