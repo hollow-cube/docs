@@ -1,7 +1,370 @@
 ---
-a: b
+title: 'Comprehensive Markdown & MDX Formatting Test'
+description: 'A complete test of all markdown and MDX formatting features'
 ---
 
-# Test Doc
+# Comprehensive Markdown & MDX Formatting Test
 
-Hello, content!!!
+This document tests all major markdown formatting features and custom MDX components.
+
+## Table of Contents
+
+- [Headers](#headers)
+- [Text Formatting](#text-formatting)
+- [Lists](#lists)
+- [Links and Images](#links-and-images)
+- [Code](#code)
+- [Tables](#tables)
+- [Blockquotes](#blockquotes)
+- [Horizontal Rules](#horizontal-rules)
+- [Custom Components](#custom-components)
+- [HTML Elements](#html-elements)
+
+## Headers
+
+# H1 Header
+
+## H2 Header
+
+### H3 Header
+
+#### H4 Header
+
+##### H5 Header
+
+###### H6 Header
+
+## Text Formatting
+
+**Bold text** and **also bold text**
+
+_Italic text_ and _also italic text_
+
+**_Bold and italic_** and **_also bold and italic_**
+
+~~Strikethrough text~~
+
+Regular text with `inline code` in the middle.
+
+Text with super^script^ and sub~script~.
+
+## Lists
+
+### Unordered Lists
+
+- First item
+- Second item
+    - Nested item
+    - Another nested item
+        - Deep nested item
+- Third item
+
+* Alternative bullet style
+* Second item
+    - Mixed nested style
+    - Another mixed item
+
+### Ordered Lists
+
+1. First ordered item
+2. Second ordered item
+    1. Nested numbered item
+    2. Another nested numbered item
+3. Third ordered item
+
+### Task Lists
+
+- [x] Completed task
+- [ ] Incomplete task
+- [x] Another completed task
+    - [ ] Nested incomplete task
+    - [x] Nested completed task
+
+## Links and Images
+
+### Links
+
+[Regular link](https://example.com)
+
+[Link with title](https://example.com 'Example Website')
+
+[Reference link][1]
+
+[1]: https://example.com 'Reference link example'
+
+### Images
+
+![Sample image](test.png)
+
+## Code
+
+### Inline Code
+
+Here's some `inline code` and `const variable = "value"`.
+
+### Code Blocks
+
+```
+Plain code block without syntax highlighting
+const example = "no highlighting";
+```
+
+```javascript
+// JavaScript code block
+function greetUser(name) {
+    console.log(`Hello, ${name}!`);
+    return `Welcome, ${name}`;
+}
+
+const user = 'World';
+greetUser(user);
+```
+
+```python
+# Python code block
+def calculate_fibonacci(n):
+    if n <= 1:
+        return n
+    return calculate_fibonacci(n-1) + calculate_fibonacci(n-2)
+
+# Generate first 10 fibonacci numbers
+for i in range(10):
+    print(f"F({i}) = {calculate_fibonacci(i)}")
+```
+
+```bash
+# Bash commands
+npm install package-name
+cd project-directory
+npm run build
+```
+
+```json
+{
+    "name": "test-project",
+    "version": "1.0.0",
+    "dependencies": {
+        "react": "^18.0.0",
+        "typescript": "^5.0.0"
+    },
+    "scripts": {
+        "dev": "vite dev",
+        "build": "vite build"
+    }
+}
+```
+
+```css
+/* CSS styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.header {
+    background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+}
+```
+
+```sql
+-- SQL queries
+SELECT users.name, users.email, COUNT(orders.id) as order_count
+FROM users
+LEFT JOIN orders ON users.id = orders.user_id
+WHERE users.created_at > '2024-01-01'
+GROUP BY users.id
+ORDER BY order_count DESC
+LIMIT 10;
+```
+
+## Tables
+
+### Simple Table
+
+| Column 1    | Column 2    | Column 3    |
+| ----------- | ----------- | ----------- |
+| Row 1 Col 1 | Row 1 Col 2 | Row 1 Col 3 |
+| Row 2 Col 1 | Row 2 Col 2 | Row 2 Col 3 |
+
+### Aligned Table
+
+| Left Aligned | Center Aligned |    Right Aligned |
+| :----------- | :------------: | ---------------: |
+| Left text    |  Center text   |       Right text |
+| More left    |  More center   |       More right |
+| Lorem ipsum  |   Dolor sit    | Amet consectetur |
+
+### Complex Table
+
+| Feature            | Status         | Priority | Notes                    |
+| ------------------ | -------------- | -------- | ------------------------ |
+| **Authentication** | ✅ Complete    | High     | OAuth2 implemented       |
+| _User Management_  | 🚧 In Progress | Medium   | CRUD operations 80% done |
+| ~~Old Feature~~    | ❌ Deprecated  | Low      | Will be removed in v2.0  |
+| `API Endpoints`    | ✅ Complete    | High     | RESTful design           |
+
+## Blockquotes
+
+> This is a simple blockquote.
+
+> This is a blockquote with multiple lines.
+> It continues on this line.
+> And this line too.
+
+> **Blockquote with formatting**
+>
+> You can use _italic_, **bold**, and even `code` inside blockquotes.
+>
+> > This is a nested blockquote.
+> > It can contain multiple lines too.
+
+> ### Blockquote with headers
+>
+> Even headers work inside blockquotes.
+>
+> - And lists
+> - Work too
+
+## Horizontal Rules
+
+Here's a horizontal rule:
+
+---
+
+And another style:
+
+---
+
+And yet another:
+
+---
+
+## HTML Elements
+
+### Emphasis and Strong
+
+<em>Emphasized text using HTML</em>
+
+<strong>Strong text using HTML</strong>
+
+<mark>Highlighted text</mark>
+
+<del>Deleted text</del>
+
+<ins>Inserted text</ins>
+
+### Abbreviations and Definitions
+
+<abbr title='HyperText Markup Language'>HTML</abbr> is the standard markup language.
+
+<dfn>CSS</dfn> stands for Cascading Style Sheets.
+
+### Keyboard and Code
+
+Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy.
+
+The <code>console.log()</code> function outputs to the console.
+
+<samp>This is sample computer output</samp>
+
+<var>x</var> = <var>y</var> + 2
+
+### Superscript and Subscript
+
+E = mc<sup>2</sup>
+
+H<sub>2</sub>O is the chemical formula for water.
+
+### Small Text and Citations
+
+<small>This is small print text.</small>
+
+<q>This is a short inline quotation.</q>
+
+<cite>The Great Gatsby</cite> by F. Scott Fitzgerald.
+
+## Special Characters and Entities
+
+Here are some special characters: © ® ™ € £ ¥ § ¶ † ‡ • …
+
+Math symbols: ± × ÷ ≠ ≤ ≥ ∞ ∑ ∏ √ ∂ ∫
+
+Arrows: ← → ↑ ↓ ↔ ↕ ↖ ↗ ↘ ↙
+
+Greek letters: α β γ δ ε ζ η θ ι κ λ μ ν ξ ο π ρ σ τ υ φ χ ψ ω
+
+## Line Breaks and Spacing
+
+This is a line with two spaces at the end.  
+This should be on a new line due to the line break.
+
+This paragraph has a manual line break using HTML.<br />
+This line comes right after the break.
+
+---
+
+## Escape Characters
+
+Here are some escaped characters:
+
+\*This is not italic\*
+
+\`This is not code\`
+
+\# This is not a header
+
+\[This is not a link\](example.com)
+
+## Edge Cases
+
+### Empty Elements
+
+Here's an empty blockquote:
+
+>
+
+Here's an empty list:
+
+-
+
+### Mixed Formatting
+
+**Bold _and italic_ text** with `code` inside.
+
+_Italic **and bold** text_ with ~~strikethrough~~.
+
+`Code with **bold** and *italic*` (should not render formatting inside code).
+
+### Long Content
+
+This is a very long line of text that should wrap properly and demonstrate how the styling handles lengthy content without breaking the layout or causing horizontal scrolling issues in most cases.
+
+| Very Long Header That Might Cause Issues                      | Another Long Header | Short |
+| ------------------------------------------------------------- | ------------------- | ----- |
+| Very long cell content that might wrap or cause layout issues | More content        | OK    |
+
+---
+
+## Test Summary
+
+This document tests:
+
+✅ **Headers** (H1-H6)  
+✅ **Text formatting** (bold, italic, strikethrough, etc.)  
+✅ **Lists** (ordered, unordered, nested, tasks)  
+✅ **Links and images** (various styles)  
+✅ **Code blocks** (multiple languages)  
+✅ **Tables** (simple, aligned, complex)  
+✅ **Blockquotes** (simple, nested, with formatting)  
+✅ **Custom MDX components** (Alert, Callout, CodeBlock)  
+✅ **HTML elements** (emphasis, kbd, sup/sub, etc.)  
+✅ **Special characters and entities**  
+✅ **Edge cases and escape characters**
+
+---
+
+_End of formatting test document_
