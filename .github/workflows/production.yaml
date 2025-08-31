@@ -1,0 +1,15 @@
+name: Deploy Docs
+on:
+  push:
+    branches: [main]
+
+jobs:
+  trigger-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger website deployment
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.TRIGGER_TOKEN }}
+          repository: hollow-cube/hollowcube.net-v2
+          event-type: docs-prod
