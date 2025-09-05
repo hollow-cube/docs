@@ -1,0 +1,37 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Navigation Structure",
+    "description": "Schema for a nested navigation structure with pages and sections",
+    "type": "object",
+    "properties": {
+        "pages": {
+            "type": "array",
+            "items": {
+                "oneOf": [
+                    {
+                        "type": "string",
+                        "description": "A simple page path"
+                    },
+                    {
+                        "type": "object",
+                        "properties": {
+                            "title": {
+                                "type": "string",
+                                "description": "The title of the navigation section"
+                            },
+                            "pages": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/properties/pages/items"
+                                },
+                                "description": "Child pages or sections (recursive structure)"
+                            }
+                        },
+                        "required": ["title", "pages"],
+                        "additionalProperties": false
+                    }
+                ]
+            }
+        }
+    }
+}

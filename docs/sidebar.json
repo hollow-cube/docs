@@ -1,0 +1,47 @@
+{
+    "pages": [
+        "testpage",
+        {
+            "title": "Blah",
+            "pages": [
+                "testpage",
+                {
+                    "title": "Another child",
+                    "pages": [
+                        "testpage",
+                        "testpage",
+                        "testpage",
+                        "testpage",
+                        "testpage",
+                        "testpage",
+                        "testpage",
+                        "testpage",
+                        "testpage",
+                        "testpage",
+                        "testpage",
+                        "testpage",
+                        "testpage",
+                        "testpage",
+                        "testpage",
+                        "testpage",
+                        "testpage",
+                        "testpage",
+                        "testpage",
+                        "testpage",
+                        "testpage",
+                        "testpage",
+                        "testpage",
+                        "testpage",
+                        "testpage",
+                        "testpage",
+                        "testpage",
+                        {
+                            "title": "Another nested level",
+                            "pages": ["testpage"]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

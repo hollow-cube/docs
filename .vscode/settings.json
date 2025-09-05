@@ -1,0 +1,8 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": ["sidebar.json"],
+            "url": ".vscode/sidebar.schema.json"
+        }
+    ]
+}
