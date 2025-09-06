@@ -1,0 +1,58 @@
+---
+title: Checkpoints
+---
+
+## Checkpoints
+
+Checkpoints are a core feature for creating parkour maps. At their simplest, they work just as you'd expect: they save a player's position and the direction they are facing. However, they can also have custom behavior, executed from a list of predefined actions that a map builder can choose. Such examples are giving players potion effects and items, teleporting them, setting a time limit to reach the next checkpoint, making lava reset the player, and so on.
+
+-----
+
+## Getting a Checkpoint
+
+As a builder, you can get a Checkpoint Plate from the builder menu item, which you are given when you first create a world. If you don't have it, you can get it back by doing `/give mapmaker:builder_menu`, or accessing the menu directly via `/buildermenu`, or `/bm` for short.
+
+Alternatively, you can get a Checkpoint Plate directly by running the command `/give mapmaker:checkpoint_plate`.
+
+-----
+
+## Types of Checkpoints
+
+There are two main types of checkpoints:
+
+1.  **Checkpoint Plate**: This is the standard pressure plate item you get from the builder menu or with /give. You place it in the world and right-click it to configure its behavior.
+2.  **Checkpoint Region**: This is a more advanced, invisible checkpoint that is defined by a volume of space rather than a single block. You can learn more about how to set these up on the [regions]() documentation page.
+
+-----
+
+## The Checkpoint Menu
+
+When you right-click a checkpoint plate or region as a builder, you open its configuration menu.
+
+![An empty list of checkpoint actions](current_actions_empty.png)
+*A default checkpoint menu with nothing in it.*
+
+In this default state, the checkpoint will only save the player's position. To add custom behavior, you can click the `+` icon to add an action.
+
+![A list of all available actions](actions_list.png)
+*The list of all available actions.*
+
+There are quite a few actions to choose from. We won't go over them here, but you can read about them in the [actions]() section of the docs or experiment with them yourself in-game.
+
+![An example list of checkpoint actions](current_actions_example.png)
+*A checkpoint with an example list of actions.*
+
+After selecting the actions you want, opening the menu again will show your chosen configuration. From here, you can further edit an action's settings with a **left-click** or remove it with a **right-click**.
+
+Keep in mind that actions are executed in order, so make sure that, for example, if you want to remove items from someone, you do that *before* adding new ones.
+
+In the top right, you can toggle whether the checkpoint can be activated only once or multiple times.
+
+To test your checkpoint and its actions, get the **test mode** item from the builder menu or simply run the command `/test`.
+
+-----
+
+## Misc. Behavior
+
+  * **Copying a Checkpoint**: You can use your "pick block" key on a checkpoint to get a copy of it. When you place the new checkpoint, it will have the exact same configuration as the one you copied.
+  * **Building Tools Compatibility**: Checkpoints work with **Terraform**, our basic, custom reimplementation of World Edit, so no need to worry about deleting them when you're cutting, moving, and pasting things around. This is not currently the case with Axiom mod, however.
