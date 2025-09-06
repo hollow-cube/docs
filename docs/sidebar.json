@@ -2,6 +2,12 @@
     "pages": [
         "testpage",
         {
+          "title": "Triggers",
+          "pages": [
+            "triggers/checkpoint"
+          ]
+        },
+        {
             "title": "Blah",
             "pages": [
                 "testpage",
