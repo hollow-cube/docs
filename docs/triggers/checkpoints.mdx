@@ -2,11 +2,7 @@
 title: Checkpoints
 ---
 
-## Checkpoints
-
 Checkpoints are a core feature for creating parkour maps. At their simplest, they work just as you'd expect: they save a player's position and the direction they are facing. However, they can also have custom behavior, executed from a list of predefined actions that a map builder can choose. Such examples are giving players potion effects and items, teleporting them, setting a time limit to reach the next checkpoint, making lava reset the player, and so on.
-
------
 
 ## Getting a Checkpoint
 
@@ -14,16 +10,12 @@ As a builder, you can get a Checkpoint Plate from the builder menu item, which y
 
 Alternatively, you can get a Checkpoint Plate directly by running the command `/give mapmaker:checkpoint_plate`.
 
------
-
 ## Types of Checkpoints
 
 There are two main types of checkpoints:
 
 1.  **Checkpoint Plate**: This is the standard pressure plate item you get from the builder menu or with /give. You place it in the world and right-click it to configure its behavior.
 2.  **Checkpoint Region**: This is a more advanced, invisible checkpoint that is defined by a volume of space rather than a single block. You can learn more about how to set these up on the [regions]() documentation page.
-
------
 
 ## The Checkpoint Menu
 
@@ -50,9 +42,7 @@ In the top right, you can toggle whether the checkpoint can be activated only on
 
 To test your checkpoint and its actions, get the **test mode** item from the builder menu or simply run the command `/test`.
 
------
-
 ## Misc. Behavior
 
-  * **Copying a Checkpoint**: You can use your "pick block" key on a checkpoint to get a copy of it. When you place the new checkpoint, it will have the exact same configuration as the one you copied.
-  * **Building Tools Compatibility**: Checkpoints work with **Terraform**, our basic, custom reimplementation of World Edit, so no need to worry about deleting them when you're cutting, moving, and pasting things around. This is not currently the case with Axiom mod, however.
+* **Copying a Checkpoint**: You can use your "pick block" key on a checkpoint to get a copy of it. When you place the new checkpoint, it will have the exact same configuration as the one you copied.
+* **Building Tools Compatibility**: Checkpoints work with **Terraform**, our basic, custom reimplementation of World Edit, so no need to worry about deleting them when you're cutting, moving, and pasting things around. This is not currently the case with Axiom mod, however.
