@@ -4,23 +4,27 @@ title: 1.37.0 Changelog
 
 ## Additions
 
-#### Added set variable action
-> With these you can set a decimal number to a name which can be used for other actions.
-> This action unlike others use the Molang expression language so instead of being provided buttons with add, sub, and set
-> you get to use an expression to set the variable, for example if you have a variable named`result` and you have the expression as `variable.result + 1`  it will increment it by one each time its ran, but maybe you want more than just addition, you can use other variables to effect `result` for example `variable.one + variable.two` 
-> will make it so the `result` variable will be the sum of variable `one` and `two`.
+#### Added Set Variable Action
+> With these, you can set a decimal number to a name that can be used for other actions.
+> This action, unlike others, uses the Molang expression language, so instead of being provided buttons with add, sub, and set,
+> you get to use an expression to set the variable. For example, if you have a variable named `result` and you have the expression as `variable.result + 1`, it will increment it by one each time it's run. But maybe you want more than just addition. In such cases,
+> you can use other variables to affect `result`, for example, `variable.one + variable.two` 
+> will make it so the `result` variable will be the sum of variables `one` and `two`.
 
-#### Added action requirements
-> With variables alone its not much, but now you can set a requirement for a plate or region.
-> Like the new set variable action this is also a Molang expression but instead of resolving to a number it must resolve to a true or false, you can use the variables set in the new action for the requirements.
+#### Added Action Requirements
+> With variables alone, it's not much, so we've also made it so you can set a requirement for a plate or region.
+> Just like the new set variable action, this is also a Molang expression, but instead of resolving to a number, it must resolve to a true or false. 
+> You can use the variables set in the new action for the requirements.
 > 
-> An example of this is if you set the requirement to `variable.result > 5` this will require to activate the plate/region the player must have a variable in their state this is greater than 5.
+> An example of this is if you set the requirement to `variable.result > 5`, then to activate the plate/region, the player must have a variable in their state that is greater than 5.
 > 
-> You can also optionally set a requirement message or by default it will have its own, you can also disable such a message as well for more complex maps.
+> You can also optionally set a requirement message, or by default it will have its own; you can also disable such a message as well for more complex maps.
 
-#### Added variable placeholders to chat action
-> You can also use the variables in chat actions as such you can do `<variable:name/>` and it will insert the variable into the chat message.
-> You can also use the additional arguments like `<variable:name:percent:100/>` which will format the inserted text as a percentage with the last argument `100` being what its out of.
+#### Added Variable Placeholders To Chat Action
+> You can also use the variables in chat actions. Simply write `<variable:name/>` and it will insert the variable into the chat message.
+> You can also use additional arguments like `<variable:name:percent:100/>`, which will format the inserted text as a percentage with 
+> the last argument `100` being what it's out of.
 
-> You can find out more about Molang and what you can do with it on Microsoft's documentation <https://learn.microsoft.com/en-us/minecraft/creator/documents/molang/syntax-guide>
-> Do note some more advanced stuff is unsupported
+> You can find out more about Molang and what you can do with it on Microsoft's documentation 
+> <https://learn.microsoft.com/en-us/minecraft/creator/documents/molang/syntax-guide>
+> Do note, though, that some more advanced stuff is unsupported.
